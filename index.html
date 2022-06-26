@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quick Tiles</title>
+        <meta name="viewport" content="width=device-width, initial-scale=0.80">
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <h1 class="title">Select Level:</h1>
+                <button class="level" onclick="setLevel(1.0)">Easy</button>
+                <button class="level" onclick="setLevel(0.75)">Medium</button>
+                <button class="level" onclick="setLevel(0.5)">Hard</button>
+            </div>
+        </div>
+        <div id="scoremodal" class="modal">
+            <div class="modal-content">
+                <h1 class="title" id="scorebox">Score: 0</h1>
+                <h1 class="title" id="highscore">Highscore: 0</h1>
+            </div>
+        </div>
+        <h1 class="title" id="score">Score: 0</h1>
+        <div id="tiles">
+            <table>
+                <tr>
+                    <td id="tile1" class="tile" onclick="clicked(1)"></td>
+                    <td id="tile2" class="tile" onclick="clicked(2)"></td>
+                    <td id="tile3" class="tile" onclick="clicked(3)"></td>
+                    <td id="tile4" class="tile" onclick="clicked(4)"></td>
+                </tr>
+                <tr>
+                    <td id="tile5" class="tile" onclick="clicked(5)"></td>
+                    <td id="tile6" class="tile" onclick="clicked(6)"></td>
+                    <td id="tile7" class="tile" onclick="clicked(7)"></td>
+                    <td id="tile8" class="tile" onclick="clicked(8)"></td>
+                </tr>
+                <tr>
+                    <td id="tile9" class="tile" onclick="clicked(9)"></td>
+                    <td id="tile10" class="tile" onclick="clicked(10)"></td>
+                    <td id="tile11" class="tile" onclick="clicked(11)"></td>
+                    <td id="tile12" class="tile" onclick="clicked(12)"></td>
+                </tr>
+                <tr>
+                    <td id="tile13" class="tile" onclick="clicked(13)"></td>
+                    <td id="tile14" class="tile" onclick="clicked(14)"></td>
+                    <td id="tile15" class="tile" onclick="clicked(15)"></td>
+                    <td id="tile16" class="tile" onclick="clicked(16)"></td>
+                </tr>
+            </table>
+        </div>
+        <script>load();</script>
+    </body>
+</html>
